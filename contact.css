@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200;300;400;500;600;700;800;&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding:5px 0;
+    background-color: #148f77;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin:0 auto;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color: #148f77;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #148f77;
+    color: #fff;
+}
+.active {
+    background-color: #148f77;
+    color: #fff;
+}
+section {
+    padding:50px 0;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(PT.BRANLI\ ENERGI\ INDONESIA.png);
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1 .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container1 .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container1 .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px; 
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translatey(-20px);
+}
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactinfo {
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}
+footer {
+    padding:30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width:100px ;
+    height: 100px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #148f77;
+    border-right-color: #148f77;
+    border-bottom-color: #148f77;  
+    animation: puterin .5s linear infinite;
+}
+.label {
+    background-color: #148f77;
+    color: #fff;
+}
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    .box .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
