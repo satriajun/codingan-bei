@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT BRANLI ENERGI INDONESIA</title>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="branli.html"><img src="img/jcsn2et3.png"></a></h1>
+            <ul>
+                <li><a href="branli.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="client.html">CLIENT</a></li>
+                <li class="active"><a href="galery.html">GALERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- label -->
+    <section class="label">
+        <div class="container">
+            <p>home / galery</p>
+        </div>
+    </section>
+    <!-- galery -->
+    <div class="container">
+        <div class="heading">video gallery</div>
+        <div class="video-container">
+    
+        <div class="video">
+            <video src="video/vidio1.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio2.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio3.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio4.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio1.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio2.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio3.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio4.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/vidio1.mp4"></video>
+        </div>
+    
+        </div>
+        </div>
+    
+    
+        <script>
+        var video = document.querySelectorAll('video')
+        video.forEach(play => play.addEventListener('click', () =>{
+            play.classList.toggle('active');
+            if(play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime = 0;
+            }
+        }))
+    
+        </script>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright © 2020. All Rights Reserved. Design by Velocity Developer.</small>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+</body>
+</html>
